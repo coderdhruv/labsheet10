@@ -12,7 +12,7 @@ int *makeheap(int a[],int n){
 	for(i=0 ; i<n ; i++){
 		heap[i+1] = a[i];
 		j=i+1;		
-		while((heap[j/2]>heap[j])){			
+		while((heap[j/2]>heap[j])&&j!=1){			
 			swap(&heap[j/2],&heap[j]);
 			if(j/2 == 1){
 				break;
