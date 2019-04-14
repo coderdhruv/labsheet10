@@ -9,7 +9,7 @@ int *makeheap(int a[],int n){
 	static int heap[1000];
 	int i,j;
 	heap[0] = 0;
-	for(i=0 ; i<n ; i++){
+	for(i=0;i<n;i++){
 		heap[i+1] = a[i];
 		j=i+1;		
 		while((heap[j/2]>heap[j])&&j!=1){			
